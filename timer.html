@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown Timer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        #timer {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        #controls {
+            margin-top: 20px;
+        }
+
+        button {
+            font-size: 18px;
+            padding: 10px 20px;
+            margin: 0 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="timer">00:00:00</div>
+
+    <div id="controls">
+        <button onclick="startTimer()">Start</button>
+        <button onclick="pauseTimer()">Pause</button>
+        <button onclick="resetTimer()">Reset</button>
+    </div>
+
+    <script>
+        let timer;
+        let timeLeft;
+        let isRunning = false;
+
+        function startTimer() {
+            if (!isRunning) {
+                const hoursInput = parseInt(prompt("Enter hours:"));
+                const minutesInput = parseInt(prompt("Enter minutes:"));
+                const secondsInput = parseInt(prompt("Enter seconds:"));
+
+                if (isNaN(hoursInput) || isNaN(minutesInput) || isNaN(secondsInput)) {
+                    alert("Please enter valid numbers.");
+                    return;
+                }
+
+                timeLeft = (hoursInput * 3600) + (minutesInput * 60) + secondsInput;
+
+                if (timeLeft <= 0) {
+                    alert("Please enter a positive time value.");
+                    return;
+                }
+
+                timer = setInterval(updateTime, 1000);
+                isRunning = true;
+            }
+        }
+
+        function pauseTimer() {
+            clearInterval(timer);
+            isRunning = false;
+        }
+
+        function resetTimer() {
+            clearInterval(timer);
+            document.getElementById("timer").innerText = "00:00:00";
+            isRunning = false;
+        }
+
+        function updateTime() {
+            if (timeLeft > 0) {
+                timeLeft--;
+                const hours = Math.floor(timeLeft / 3600);
+                const minutes = Math.floor((timeLeft % 3600) / 60);
+                const seconds = timeLeft % 60;
+                document.getElementById("timer").innerText =
+                    `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+            } else {
+                clearInterval(timer);
+                document.getElementById("timer").innerText = "Time's up!";
+                isRunning = false;
+            }
+        }
+    </script>
+
+</body>
+
+</html>
