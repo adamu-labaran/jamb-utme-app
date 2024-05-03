@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <!--===========custom css=======================-->
+    <link rel="stylesheet" href="style.css">
+
+    <!--========================icons===========================-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <!--=======================bootstrap icon================================================================-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+
+    <!-- Include Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha384-yvzspNkV6m/7iSXA0IyOp6jiqZp7MquP3nfnP0azfGI0a6Pip4U6WyKzBt9qiF7P" crossorigin="anonymous">
+
+    <!--============================================end of icons===============================================-->
+
+
+    <title>jambUI.js</title>
+</head>
+<body>
+    <div class="container">
+        <!--====================================sticky Header==========================-->
+        <div class="sticky-header">
+            <i class="bi bi-box-arrow-left"></i> <span>Log Out</span>
+            <i class="bi bi-calculator-fill"></i> <span>Calculator</span>
+            <i class="bi bi-bookmark-star-fill"></i> <span>Bookmark</span>
+            <i class="bi bi-exclamation-triangle"></i> <span>Report Error</span>
+            <i class="fas fa-book-open"></i> <span>Dictionary</span>
+        </div>
+        <!--====================================end of sticky Header==========================-->
+
+        <!--==================================profile, submit, timer header=========================-->
+        <!-- </ion-icon> <img src="clip_img.webp" alt="person-clip" class="person-clip" width="40" height="40"
+            style="-webkit-clip-path: circle(50% at 50% 50%)"> -->
+        <div class="submit">
+            <label for=""><ion-icon name="person-outline"></ion-icon><label for="" class="persona-user">Adamu labaran</label></label>
+            <button class="submit-btn"><span class="bi bi-check-circle"> Submit</span></button>
+            <span class="submit-btn timer">Timer</span>
+        </div>
+        <!--==================================end of profile, submit, timer header=========================-->
+
+            <!--=========================================main content============================-->
+        <main id="main-content">
+            <!--===================================subject Header=======================================-->
+            <div class="subjects">
+                <a href="#english" id="eng">English</a>
+                <a href="#commerce" id="com">Commerce</a>
+                <a href="#maths" id="maths">Mathematics</a>
+                <a href="#economics" id="econs">Economics</a>
+            </div>
+            <!--===================================end subject Header=======================================-->
+            
+            <!--========================================subjects container==================================-->
+            
+            <div class="subj-container">
+                <!--================================y=========single subject constainer==========================-->
+                <span id="english">
+                    <div class="question-numbering">
+                        <b class="bi bi-chevron-compact-down"> <span class="quest-count">Question 1/50</span></b> <i class="bi bi-volume-up-fill"></i>
+                    </div>
+                    <div id="individual-question">It is I who _______ go to the market today</div>
+                    
+                    <!--==============================options and answer button=================================================-->
+                    <div id="options">
+                        <label for="" class="option1"><b style="margin-right: 7px;">A</b> <input type="radio" name="group1" id="option1"> am suppose</label>
+                        <label for="" class="option2"><b style="margin-right: 7px;">B</b> <input type="radio" name="group1" id="option2"> is suppose</label>
+                        <label for="" class="option3"><b style="margin-right: 7px;">C</b> <input type="radio" name="group1" id="option3"> should suppose</label>
+                        <label for="" class="option4"><b style="margin-right: 7px;">D</b> <input type="radio" name="group1" id="option4"> are suppose</label>
+                    </div>
+                    <!--==============================end of options and answer button=================================================-->
+            
+
+                    <!--============================next and previous button=================================================-->
+                    <div class="btn">
+                        <button class="previous"><b class="bi bi-chevron-compact-left"></b>Previous </button> <button class="next">Next<b class="bi bi-chevron-compact-right"></b></button>
+                    </div>
+                    <!--============================end of next and previous button=================================================-->
+            
+                    <div class="attempted">
+                        <button class="attempted-btn">Attempted 0/60</button>
+                        <div class="num-attempted">
+                            <div class="first-20">
+                                <button class="mono">1</button><button class="mono">2</button><button class="mono">3</button><button class="mono">4</button><button class="mono">5</button><button class="mono">6</button><button class="mono">7</button><button class="mono">8</button><button class="mono">9</button><button class="mono-2">10</button><button class="mono-2">11</button><button class="mono-2">12</button><button class="mono-2">13</button><button class="mono-2">14</button><button class="mono-2">15</button><button class="mono-2">16</button><button class="mono-2">17</button><button class="mono-2">18</button><button class="mono-2">19</button><button class="mono-2">20</button>   
+                            </div>
+
+                            <div class="second-20">
+                                <button>21</button><button>22</button><button>23</button><button>24</button><button>25</button><button>26</button><button>27</button><button>28</button><button>29</button><button>30</button><button>31</button><button>32</button><button>33</button><button>34</button><button>35</button><button>36</button><button>37</button><button>38</button><button>39</button><button>40</button>
+                            </div>
+
+                            <div class="third-20">
+                                <button>41</button><button>42</button><button>43</button><button>44</button><button>45</button><button>46</button><button>47</button><button>48</button><button>49</button><button>50</button><button>51</button><button>52</button><button>53</button><button>54</button><button>55</button><button>56</button><button>57</button><button>58</button><button>59</button><button>60</button>
+                            </div>
+
+                        </div>
+                    </div>
+                </span>
+                <!--=========================================end of single subject constainer==========================-->
+            
+                <!--=========================================single subject constainer==========================-->
+                <span id="commerce" style="display: none;">
+                    <div class="question-numbering">
+                        <span>Question 1/50</span>
+                    </div>
+                    <div id="individual-question">It is I who _______ go to the market today</div>
+            
+                    <div id="options">
+                        <div class="option-a">am suppose</div>
+                        <div class="option-b">is suppose</div>
+                        <div class="option-c">should suppose</div>
+                        <div class="option-d">are suppose</div>
+                    </div>
+            
+                    <!--============================next and previous button=================================================-->
+                    <div class="btn">
+                        <button>Previous</button>
+                        <button>Next</button>
+                    </div>
+                    <!--============================end of next and previous button=================================================-->
+            
+                    <div class="attempted">
+                        <button>attempted</button>
+                        <div class="num-attempted">
+                            <button>1</button><button>2</button><button>3</button><button>4</button><button>5</button><button>6</button><button>7</button><button>8</button><button>9</button><button>10</button>
+                            <button>11</button><button>12</button><button>13</button><button>14</button><button>15</button><button>16</button><button>17</button><button>18</button><button>19</button><button>20</button><button>21</button>
+                            <button>22</button><button>23</button><button>24</button><button>25</button><button>26</button><button>27</button><button>28</button><button>29</button><button>30</button><button>31</button><button>32</button><button>33</button><button>34</button><button>35</button><button>36</button><button>37</button><button>38</button><button>39</button><button>40</button><button>41</button>
+                            <button>42</button><button>43</button><button>44</button><button>45</button><button>46</button><button>47</button><button>48</button><button>49</button><button>50</button><button>51</button><button>52</button><button>53</button><button>54</button><button>55</button><button>56</button><button>57</button><button>58</button><button>59</button><button>60</button>
+                        </div>
+                    </div>
+                </span>
+            
+            </div>
+            <!--=========================================end of single subject constainer==========================-->
+            
+            <!--=========================================single subject constainer==========================-->
+            <span id="maths" style="display: none;">
+                <div class="question-numbering">
+                    <span>Question 1/50</span>
+                </div>
+                <div id="individual-question">It is I who _______ go to the market today</div>
+            
+                <div id="options">
+                    <div class="option-a">am suppose</div>
+                    <div class="option-b">is suppose</div>
+                    <div class="option-c">should suppose</div>
+                    <div class="option-d">are suppose</div>
+                </div>
+            
+                <!--============================next and previous button=================================================-->
+                <div class="btn">
+                    <button>Previous</button>
+                    <button>Next</button>
+                </div>
+                <!--============================end of next and previous button=================================================-->
+            
+                <div class="attempted">
+                    <button>attempted</button>
+                    <div class="num-attempted">
+                        <button>1</button><button>2</button><button>3</button><button>4</button><button>5</button><button>6</button><button>7</button><button>8</button><button>9</button><button>10</button>
+                        <button>11</button><button>12</button><button>13</button><button>14</button><button>15</button><button>16</button><button>17</button><button>18</button><button>19</button><button>20</button><button>21</button>
+                        <button>22</button><button>23</button><button>24</button><button>25</button><button>26</button><button>27</button><button>28</button><button>29</button><button>30</button><button>31</button><button>32</button><button>33</button><button>34</button><button>35</button><button>36</button><button>37</button><button>38</button><button>39</button><button>40</button><button>41</button>
+                        <button>42</button><button>43</button><button>44</button><button>45</button><button>46</button><button>47</button><button>48</button><button>49</button><button>50</button><button>51</button><button>52</button><button>53</button><button>54</button><button>55</button><button>56</button><button>57</button><button>58</button><button>59</button><button>60</button>
+                    </div>
+                </div>
+            </span>
+            <!--=========================================end of single subject constainer==========================-->
+            
+            <!--=========================================single subject constainer==========================-->
+            <span id="economics" style="display: none;">
+                <div class="question-numbering">
+                    <span>Question 1/50</span>
+                </div>
+                <div id="individual-question">It is I who _______ go to the market today</div>
+            
+                <div id="options">
+                    <div class="option-a">am suppose</div>
+                    <div class="option-b">is suppose</div>
+                    <div class="option-c">should suppose</div>
+                    <div class="option-d">are suppose</div>
+                </div>
+            
+                <!--============================next and previous button=================================================-->
+                <div class="btn">
+                    <button>Previous</button>
+                    <button>Next</button>
+                </div>
+                <!--============================end of next and previous button=================================================-->
+            
+                <div class="attempted">
+                    <button>attempted</button>
+                    <div class="num-attempted">
+                        <button>1</button><button>2</button><button>3</button><button>4</button><button>5</button><button>6</button><button>7</button><button>8</button><button>9</button><button>10</button>
+                        <button>11</button><button>12</button><button>13</button><button>14</button><button>15</button><button>16</button><button>17</button><button>18</button><button>19</button><button>20</button><button>21</button>
+                        <button>22</button><button>23</button><button>24</button><button>25</button><button>26</button><button>27</button><button>28</button><button>29</button><button>30</button><button>31</button><button>32</button><button>33</button><button>34</button><button>35</button><button>36</button><button>37</button><button>38</button><button>39</button><button>40</button><button>41</button>
+                        <button>42</button><button>43</button><button>44</button><button>45</button><button>46</button><button>47</button><button>48</button><button>49</button><button>50</button><button>51</button><button>52</button><button>53</button><button>54</button><button>55</button><button>56</button><button>57</button><button>58</button><button>59</button><button>60</button>
+                    </div>
+                </div>
+            </span>
+            <!--=========================================end of single subject constainer==========================-->
+            
+            <!--========================================end of subjects container==================================-->
+        </main>
+        
+        
+
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

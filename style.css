@@ -1,0 +1,156 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+/* defining css variables */
+:root{
+  --hue: 207;
+  --sat: 90%;
+  --lig: 61%;
+  --first-color: hsl(var(--hue), var(--sat), var(--lig));
+  --first-color-alt: hsl(var(--hue), var(--sat), 57%); /* -4% */
+  --title-color: hsl(var(--hue), 12%, 15%);
+  --text-color: hsl(var(--hue), 12%, 45%);
+  --text-color-light: hsl(var(--hue), 8%, 75%);
+  --text-color-lighten: hsl(var(--hue), 8%, 92%);
+  --body-color: hsl(var(--hue), 100%, 99%);
+  --container-color: #fff;
+
+  --mainWhite: #fff;
+  --mainBlack: #222;
+  ---mainGrey: #ececec;
+  --mainSpacing: 0.1rem;
+  --mainTransition: all 0.3s linear;
+
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}
+body{
+  background: var(--mainWhite);
+  color: var(--mainBlack);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#main-content{
+  max-width: 1117px;
+  margin: 0 18rem;
+}
+
+.sticky-header{
+  background-color:    hsl(117, 59%, 19%);
+  color: hsl(120, 6%, 80%);
+
+}
+.submit{
+    background-color:    hsl(117, 78%, 33%);
+    color: hsl(120, 9%, 98%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px;
+  }
+.timer{
+  font-size: 1rem;
+}
+  .submit-btn{
+    border-radius: 24px;
+    padding: 10px;
+    background-color: rgb(192, 39, 39);
+    border: none;
+    cursor: pointer;
+}
+button > .bi-check-circle{
+  padding: 16px;
+}
+.subjects, .question-numbering, #options, .btn, #options{
+  margin: 1rem 0;
+}
+.subjects{
+  border-bottom: 0.1px solid #bbb6b6;
+  position: relative;
+  overflow: visible;
+}
+
+#eng:hover, #com:hover, #maths:hover, #econs:hover{
+  background-color: rgb(6, 32, 8);
+  color: var(--mainWhite);
+  padding: 4px;
+  font-size: large;
+  font-weight: 300;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  letter-spacing: 5px;
+}
+#individual-question{
+  margin: 1rem;
+}
+
+.option1, .option2, .option3, .option4{
+  display: block;
+  margin: 1rem 0;
+}
+
+.previous, .bi-chevron-compact-left{
+  padding: 7px;
+  border-radius: 15px;
+  background-color: hsl(214, 56%, 49%);
+  color: var(---mainGrey);
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.next, .bi-chevron-compact-right{
+  padding: 7px;
+  border-radius: 15px;
+  background-color: hsl(115, 56%, 54%);
+  color: var(---mainGrey);
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+
+}
+
+.bi-chevron-compact-right{
+  margin-right: 10px;
+  
+}
+
+.attempted-btn{
+  background-color: #979595;
+  color: var(--mainWhite);
+  padding: 4px;
+  border: none;
+}
+.num-attempted{
+  border: 1px solid #bbb6b6;
+}
+
+.first-20 .mono{
+  padding: 8px;
+  margin: 2px;
+  width: 4%;
+  background-color: var(--mainWhite);
+  color: #bbb6b6;
+  border: none;
+  box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+  cursor: pointer;
+
+}
+
+.mono-2, .second-20 > button, .third-20 > button{
+  padding: 7px;
+  margin: 2px;
+  width: 4%;
+  background-color: var(--mainWhite);
+  color: #bbb6b6;
+  border: none;
+  box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+  cursor: pointer;
+
+}
+
